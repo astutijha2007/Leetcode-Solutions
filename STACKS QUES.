@@ -1,4 +1,4 @@
-QUESTION:- 232
+QUESTION:- 232:-
 
 
 Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
@@ -18,7 +18,7 @@ Depending on your language, the stack may not be supported natively. You may sim
 -----------*********------------***********------------*********-----------*********--------------***********------------***********
 
 
-
+Solution:-
 
 import java.util.Queue;
 class MyQueue {
@@ -56,7 +56,8 @@ output = new Stack<>();
       return input.isEmpty() && output.isEmpty();
     }
 }
-
+*******************************************************************************************************************************************************************************
+                   (Comments)
 /**
  * Your MyQueue object will be instantiated and called as such:
  * MyQueue obj = new MyQueue();
