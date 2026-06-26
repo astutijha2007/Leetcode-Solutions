@@ -28,6 +28,8 @@ Output: 4
 class Solution {
     public long maxTotalValue(int[] nums, int k) {
 
+
+
    
         int n = nums.length;
         int logn = 32 - Integer.numberOfLeadingZeros(n);
