@@ -1,0 +1,85 @@
+QUESTION:- 3286
+
+
+u are given an m x n binary matrix grid and an integer health.
+
+You start on the upper-left corner (0, 0) and would like to get to the lower-right corner (m - 1, n - 1).
+
+You can move up, down, left, or right from one cell to another adjacent cell as long as your health remains positive.
+
+Cells (i, j) with grid[i][j] = 1 are considered unsafe and reduce your health by 1.
+
+Return true if you can reach the final cell with a health value of 1 or more, and false otherwise.
+
+ 
+
+Example 1:
+
+Input: grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]], health = 1
+
+Output: true
+
+
+
+SOLUTION:-
+
+
+import java.util.*;
+
+class Solution {
+    public boolean findSafeWalk(List<List<Integer>> grid, int health) {
+        int m = grid.size();
+        int n = grid.get(0).size();
+        
+        // minCost[i][j] stores the minimum health deduction to reach cell (i, j)
+        int[][] minCost = new int[m][n];
+        for (int[] row : minCost) {
+            Arrays.fill(row, Integer.MAX_VALUE);
+        }
+        
+        Deque<int[]> deque = new ArrayDeque<>();
+        
+        // Initialize the starting point
+        minCost[0][0] = grid.get(0).get(0);
+        deque.offerFirst(new int[]{0, 0});
+        
+        // Direction vectors for moving up, down, left, right
+        int[] dirs = {-1, 0, 1, 0, -1};
+        
+        while (!deque.isEmpty()) {
+            int[] curr = deque.pollFirst();
+            int x = curr[0];
+            int y = curr[1];
+            
+            // Early exit if we reached the destination
+            if (x == m - 1 && y == n - 1) {
+                break;
+            }
+            
+            for (int i = 0; i < 4; i++) {
+                int nx = x + dirs[i];
+                int ny = y + dirs[i + 1];
+                
+                // Check boundaries
+                if (nx >= 0 && nx < m && ny >= 0 && ny < n) {
+                    int weight = grid.get(nx).get(ny);
+                    
+                    // If a safer path to (nx, ny) is found
+                    if (minCost[x][y] + weight < minCost[nx][ny]) {
+                        minCost[nx][ny] = minCost[x][y] + weight;
+                        
+                        // 0-1 BFS Optimization
+                        if (weight == 0) {
+                            deque.offerFirst(new int[]{nx, ny});
+                        } else {
+                            deque.offerLast(new int[]{nx, ny});
+                        }
+                    }
+                }
+            }
+        }
+        
+        // We must reach the end with at least 1 health point remaining
+        return minCost[m - 1][n - 1] < health;
+    }
+}
