@@ -1,5 +1,7 @@
 QUESTION:- 3699
 
+
+
 You are given three integers n, l, and r.
 
 A ZigZag array of length n is defined as follows:
