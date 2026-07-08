@@ -22,9 +22,6 @@ Output: 4
 
 
 
-
-
-
 class Solution {
     public long maxTotalValue(int[] nums, int k) {
 
