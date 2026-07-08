@@ -8,8 +8,6 @@ The total value is the sum of the values of all chosen subarrays.
 
 Return the maximum possible total value you can achieve.
 
- 
-
 Example 1:
 
 Input: nums = [1,3,2], k = 2
@@ -19,8 +17,7 @@ Output: 4
 
 
 
-
-
+SOLUTION:-
 
 class Solution {
     public long maxTotalValue(int[] nums, int k) {
