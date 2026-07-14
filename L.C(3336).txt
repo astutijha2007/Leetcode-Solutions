@@ -4,6 +4,7 @@ Question:-
 
 you are given an integer array nums.
 
+
 Your task is to find the number of pairs of non-empty subsequences (seq1, seq2) of nums that satisfy the following conditions:
 
 The subsequences seq1 and seq2 are disjoint, meaning no index of nums is common between them.
