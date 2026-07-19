@@ -5,7 +5,6 @@ Given a string s, return the lexicographically smallest subsequence of s that co
 
 
 
-
 Example 1:
 
 Input: s = "bcabc"
