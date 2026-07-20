@@ -1,0 +1,60 @@
+QUESTION:- 1260
+
+
+Given a 2D grid of size m x n and an integer k. You need to shift the grid k times.
+
+In one shift operation:
+
+Element at grid[i][j] moves to grid[i][j + 1].
+Element at grid[i][n - 1] moves to grid[i + 1][0].
+Element at grid[m - 1][n - 1] moves to grid[0][0].
+Return the 2D grid after applying shift operation k times.
+
+ 
+
+
+SOLUTION:-
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+class Solution {
+    public List<List<Integer>> shiftGrid(int[][] grid, int k) {
+        int m = grid.length;
+        int n = grid[0].length;
+        int total = m * n;
+        
+
+        // Effective shifts needed //
+
+
+        k = k % total;
+        
+        List<List<Integer>> result = new ArrayList<>();
+        
+        for (int i = 0; i < m; i++) {
+            List<Integer> row = new ArrayList<>();
+            for (int j = 0; j < n; j++) {
+
+
+                // Calculate the original index that shifts to position (i, j)//
+
+
+                int current1D = i * n + j;
+                int original1D = (current1D - k + total) % total;
+                
+                int origR = original1D / n;
+                int origC = original1D % n;
+                
+                row.add(grid[origR][origC]);
+            }
+
+            result.add(row);
+        }
+        
+        return result;
+    }
+}
+
+
