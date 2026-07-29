@@ -23,6 +23,7 @@ Lexicographically, "abba" comes before "baab". Since k = 2, the output is "baab"
 
 
 
+
 SOLUTION:-
 
 
