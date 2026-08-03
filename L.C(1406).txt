@@ -12,8 +12,6 @@ Assume Alice and Bob play optimally.
 
 Return "Alice" if Alice will win, "Bob" if Bob will win, or "Tie" if they will end the game with the same score.
 
- 
-
 Example 1:
 
 Input: stoneValue = [1,2,3,7]
