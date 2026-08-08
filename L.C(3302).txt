@@ -1,5 +1,6 @@
 QUESTION:-3302;
 
+
 You are given two strings word1 and word2.
 
   A string x is called almost equal to y if you can change at most one character in x to make it identical to y.
