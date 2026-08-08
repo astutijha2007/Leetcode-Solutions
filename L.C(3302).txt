@@ -1,5 +1,6 @@
-You are given two strings word1 and word2.
 QUESTION:-3302;
+You are given two strings word1 and word2.
+
 
 
 
