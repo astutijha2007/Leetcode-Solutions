@@ -9,13 +9,14 @@ Element at grid[i][n - 1] moves to grid[i + 1][0].
 Element at grid[m - 1][n - 1] moves to grid[0][0].
 Return the 2D grid after applying shift operation k times.
 
- 
+
+
 
 SOLUTION:-
 
+
 import java.util.ArrayList;
 import java.util.List;
-
 
 class Solution {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
