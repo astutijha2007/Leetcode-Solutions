@@ -1,5 +1,6 @@
 
-QUESTION:- 
+QUESTION:
+
 You are given an integer array nums of length n and an integer k.
 
 You must select exactly k distinct subarrays nums[l..r] of nums. Subarrays may overlap, but the exact same subarray (same l and r) cannot be chosen more than once.
