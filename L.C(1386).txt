@@ -19,6 +19,7 @@ Explanation: The figure above shows an optimal allocation of four groups. Seats 
 
 
 SOLUTION:
+
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {
         
