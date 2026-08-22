@@ -1,17 +1,10 @@
 QUESTION:- 3739
-
-
-
 You are given an integer array nums and an integer target.
 
 Return the number of subarrays of nums in which target is the majority element.
-
 The majority element of a subarray is the element that appears strictly more than half of the times in that subarray.
 
- 
-
 Example 1:
-
 Input: nums = [1,2,2,3], target = 2
 
 Output: 5
@@ -35,8 +28,7 @@ SOLUTION:-
 
 
 class Solution {
-    
-
+   
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
         
