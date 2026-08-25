@@ -2,11 +2,9 @@
 QUESTION:
 
 You are given an integer array nums of length n and an integer k.
-
 You must select exactly k distinct subarrays nums[l..r] of nums. Subarrays may overlap, but the exact same subarray (same l and r) cannot be chosen more than once.
 
 The value of a subarray nums[l..r] is defined as: max(nums[l..r]) - min(nums[l..r]).
-
 The total value is the sum of the values of all chosen subarrays.
 
 Return the maximum possible total value you can achieve.
@@ -14,9 +12,7 @@ Return the maximum possible total value you can achieve.
 Example 1:
 
 Input: nums = [1,3,2], k = 2
-
 Output: 4
-
 
 
 SOLUTION:-
@@ -24,9 +20,6 @@ SOLUTION:-
 class Solution {
     public long maxTotalValue(int[] nums, int k) {
 
-
-
-   
         int n = nums.length;
         int logn = 32 - Integer.numberOfLeadingZeros(n);
         int[][] stMax = new int[n][logn];
@@ -34,18 +27,22 @@ class Solution {
         for (int i = 0; i < n; i++) {
             stMax[i][0] = stMin[i][0] = nums[i];
         }
+
         for (int j = 1; j < logn; j++) {
             for (int i = 0; i + (1 << j) <= n; i++) {
                 stMax[i][j] = Math.max(
                     stMax[i][j - 1],
                     stMax[i + (1 << (j - 1))][j - 1]
                 );
+
                 stMin[i][j] = Math.min(
                     stMin[i][j - 1],
                     stMin[i + (1 << (j - 1))][j - 1]
+
                 );
             }
         }
+
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[0] - a[0]);
         for (int l = 0; l < n; l++) {
             int j = 31 - Integer.numberOfLeadingZeros(n - 1 - l + 1);
@@ -53,6 +50,7 @@ class Solution {
             int mn = Math.min(stMin[l][j], stMin[n - 1 - (1 << j) + 1][j]);
             pq.offer(new int[] { mx - mn, l, n - 1 });
         }
+
         long ans = 0;
         while (k-- > 0) {
             int[] top = pq.poll();
