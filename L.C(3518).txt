@@ -1,5 +1,4 @@
-QUESTION:- 3518
-
+QUESTION: 3518
 
 You are given a palindromic string s and an integer k.
 
@@ -11,14 +10,12 @@ Note: Different rearrangements that yield the same palindromic string are consid
 Example 1:
 
 Input: s = "abba", k = 2
-
 Output: "baab"
 
 Explanation:
 
 The two distinct palindromic rearrangements of "abba" are "abba" and "baab".
 Lexicographically, "abba" comes before "baab". Since k = 2, the output is "baab".
-
 
 
 SOLUTION:-
@@ -36,7 +33,9 @@ class Solution {
                 return k + 1;
             }
         }
+
         return res;
+
     }
 
     private long permutations(int rem, int[] bucket, long k) {
@@ -50,9 +49,13 @@ class Solution {
             if (ways > k) {
                 break;
             }
+
             rem -= bucket[i];
+
         }
+
         return ways;
+
     }
 
     public String smallestPalindrome(String s, long k) {
@@ -61,6 +64,7 @@ class Solution {
 
         for (int i = 0; i < partition; i++) {
             bucket[s.charAt(i) - 97] += 1;
+
         }
 
         StringBuilder left = new StringBuilder();
@@ -78,10 +82,12 @@ class Solution {
                 if (startIndex + ways > k) {
                     left.append((char) (i + 97));
                     break;
+
                 }
 
                 bucket[i] += 1;
                 startIndex += ways;
+
             }
         }
 
