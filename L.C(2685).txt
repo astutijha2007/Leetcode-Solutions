@@ -1,5 +1,4 @@
-QUESTION:-2685
-
+QUESTION: 2685
 
 You are given an integer n. There is an undirected graph with n vertices, numbered from 0 to n - 1. You are given a 2D integer array edges where edges[i] = [ai, bi] denotes that there exists an undirected edge connecting vertices ai and bi.
 
@@ -10,26 +9,24 @@ A connected component is a subgraph of a graph in which there exists a path betw
 A connected component is said to be complete if there exists an edge between every pair of its vertices.
 
 
-
-
-
 SOLUTION:-
-
 
 class Solution {
     
     public int countCompleteComponents(int n, int[][] edges) {
-     
 
-     
+
         // Adjacency lists for each vertex //
+
         List<Integer>[] graph = new ArrayList[n];
 
         // Map to store frequency of each unique adjacency list  //
+
         Map<List<Integer>, Integer> componentFreq = new HashMap<>();
 
 
         // Initialize adjacency lists with self-loops //
+
         for (int vertex = 0; vertex < n; vertex++) {
             graph[vertex] = new ArrayList<>();
             graph[vertex].add(vertex);
@@ -38,6 +35,7 @@ class Solution {
 
 
         // Build adjacency lists from edges //
+
         for (int[] edge : edges) {
             graph[edge[0]].add(edge[1]);
             graph[edge[1]].add(edge[0]);
@@ -45,6 +43,7 @@ class Solution {
 
 
         // Count frequency of each unique adjacency pattern //
+
         for (int vertex = 0; vertex < n; vertex++) {
             List<Integer> neighbors = graph[vertex];
             Collections.sort(neighbors);
@@ -56,6 +55,7 @@ class Solution {
 
 
         // Count complete components where size equals frequency  //
+
         int completeCount = 0;
         for (Map.Entry<
             List<Integer>,
@@ -66,7 +66,9 @@ class Solution {
             }
         }
 
+
         return completeCount;
+
     }
 }  
     
