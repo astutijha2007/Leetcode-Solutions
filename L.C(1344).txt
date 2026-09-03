@@ -10,9 +10,6 @@ Answers within 10-5 of the actual value will be accepted as correct.
 
 SOLUTION:-
 
-
-
-
 class Solution {
     public double angleClock(int hour, int minutes) {
 
