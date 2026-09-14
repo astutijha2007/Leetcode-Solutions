@@ -1,6 +1,5 @@
 QUESTION: 1344
 
-
 Given two numbers, hour and minutes, return the smaller angle (in degrees) formed between the hour and the minute hand.
 
 Answers within 10-5 of the actual value will be accepted as correct.
@@ -18,6 +17,7 @@ class Solution {
         double diff = Math.abs(hourAngle - minuteAngle);
 
         return Math.min(diff, 360.0 - diff);
+
     }
 }
 
