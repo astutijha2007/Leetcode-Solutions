@@ -1,4 +1,4 @@
-QUESTION:-3302;
+QUESTION:- 3302;
 
 You are given two strings word1 and word2.
 
@@ -12,7 +12,7 @@ Return an array of size word2.length representing the lexicographically smallest
 
 Note that the answer must represent the lexicographically smallest array, not the corresponding string formed by those indices.
 
- 
+
 
 Example 1:
 
@@ -31,7 +31,6 @@ word1[2] is already 'c'.
 
 
 SOLUTION-
-
 
 
         class Solution {
