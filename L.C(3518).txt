@@ -21,6 +21,7 @@ Lexicographically, "abba" comes before "baab". Since k = 2, the output is "baab"
 SOLUTION:-
 
 
+
 class Solution {
 
     private long comb(long n, long m, long k) {
