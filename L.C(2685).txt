@@ -1,4 +1,4 @@
-QUESTION: 2685
+QUESTION:- 2685;
 
 You are given an integer n. There is an undirected graph with n vertices, numbered from 0 to n - 1. You are given a 2D integer array edges where edges[i] = [ai, bi] denotes that there exists an undirected edge connecting vertices ai and bi.
 
@@ -10,6 +10,8 @@ A connected component is said to be complete if there exists an edge between eve
 
 
 SOLUTION:-
+
+
 
 class Solution {
     
