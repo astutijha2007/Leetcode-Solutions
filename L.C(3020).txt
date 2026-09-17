@@ -14,9 +14,8 @@ Output: 3
 Explanation: We can select the subset {4,2,2}, which can be placed in the array as [2,4,2] which follows the pattern and 22 == 4. Hence the answer is 3.
 
 
+SOLUTION:-  
 
-
-SOLUTION:-
 
  class Solution {
 
