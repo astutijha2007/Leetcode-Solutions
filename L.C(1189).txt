@@ -1,4 +1,4 @@
-QUESTION: 1189 
+QUESTION:- 1189 
 
 Maximum Number of Balloons
 Solved
@@ -12,7 +12,8 @@ Given a string text, you want to use the characters of text to form as many inst
 You can use each character in text at most once. Return the maximum number of instances that can be formed.
 
 
-SOLUTION:
+SOLUTION:  
+
 
 class Solution {
     public int maxNumberOfBalloons(String text) {
