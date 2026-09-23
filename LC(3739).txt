@@ -21,7 +21,8 @@ nums[1..3] = [2,2,3]
 So there are 5 such subarrays.
 
 
-SOLUTION:-
+SOLUTION:- 
+
 
 class Solution {
    
@@ -41,7 +42,7 @@ class Solution {
             } else {
                 --cnt;
                 presum -= pre[cnt];
-                ++pre[cnt];
+              ++pre[cnt];
             }
             ans += presum;
         }
