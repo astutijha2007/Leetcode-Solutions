@@ -15,7 +15,6 @@ Input: nums = [1,3,2], k = 2
 Output: 4
 
 
-
 SOLUTION:-
 
 
