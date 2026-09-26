@@ -1,4 +1,4 @@
-QUESTION: 3518
+QUESTION:- 3518
 
 You are given a palindromic string s and an integer k.
 
@@ -19,7 +19,6 @@ Lexicographically, "abba" comes before "baab". Since k = 2, the output is "baab"
 
 
 SOLUTION:-
-
 
 
 class Solution {
