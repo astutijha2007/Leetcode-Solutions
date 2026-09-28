@@ -33,6 +33,7 @@ word1[2] is already 'c'.
 SOLUTION-
 
 
+
         class Solution {
 
     public int[] validSequence(String word1, String word2) {
