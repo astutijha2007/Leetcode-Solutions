@@ -18,7 +18,7 @@ The two distinct palindromic rearrangements of "abba" are "abba" and "baab".
 Lexicographically, "abba" comes before "baab". Since k = 2, the output is "baab".
 
 
-SOLUTION:-
+SOLUTION:- 
 
 
 class Solution {
