@@ -18,7 +18,7 @@ Output: 4
 Explanation: The figure above shows an optimal allocation of four groups. Seats marked in blue are already reserved, and each set of four contiguous seats marked in orange is assigned to one group.
 
 
-SOLUTION:
+SOLUTION:-
 
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] reservedSeats) {
