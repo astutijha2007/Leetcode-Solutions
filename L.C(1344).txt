@@ -5,7 +5,7 @@ Given two numbers, hour and minutes, return the smaller angle (in degrees) forme
 Answers within 10-5 of the actual value will be accepted as correct.
 
 
-SOLUTION:
+SOLUTION:-
 
 
 class Solution {
