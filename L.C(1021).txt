@@ -12,7 +12,7 @@ Return s after removing the outermost parentheses of every primitive string in t
  
 
 Example 1:
-
+  
 Input: s = "(()())(())"
 Output: "()()()" 
 Explanation: 
