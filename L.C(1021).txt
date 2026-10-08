@@ -35,9 +35,11 @@ class Solution {
             if(c == ')') {
                 stack.pop();
             }
+
             if(!stack.isEmpty()) {
                 res.append(c);
             }
+
             if (c == '(') {
                 stack.push(c);
             }
