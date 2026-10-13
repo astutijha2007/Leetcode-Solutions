@@ -1,3 +1,4 @@
+
 Qestion:- 2784
 
 You are given an integer array nums. We consider an array good if it is a permutation of an array base[n].
