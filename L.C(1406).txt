@@ -1,3 +1,4 @@
+
 QUESTION:- 1406;
 
 Alice and Bob continue their games with piles of stones. There are several stones arranged in a row, and each stone has an associated value which is an integer given in the array stoneValue.
@@ -17,6 +18,7 @@ Example 1:
 Input: stoneValue = [1,2,3,7]
 Output: "Bob"
 Explanation: Alice will always lose. Her best move will be to take three piles and the score become 6. Now the score of Bob is 7 and Bob wins.
+
 
 
 SOLUTION:-
