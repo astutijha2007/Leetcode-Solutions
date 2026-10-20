@@ -27,9 +27,8 @@ Only k = 3 is sortable. Hence, the answer is 3.
 
 
 
+SOLUTION:
 
-
-SOLUTION:-
 
 class Solution {
 
@@ -63,6 +62,7 @@ class Solution {
                     break;
                 }
             }
+
             if (allGood) {
                 ans += d;
             }
@@ -89,18 +89,25 @@ class Solution {
         for (int i = 1; i < m; i++) {
             while (j > 0 && pattern[i] != pattern[j]) {
                 j = pi[j - 1];
+
             }
+
             if (pattern[i] == pattern[j]) {
                 j++;
+
             }
+
             pi[i] = j;
+
         }
 
         j = 0;
         for (int i = 0; i < n; i++) {
             while (j > 0 && text[i] != pattern[j]) {
                 j = pi[j - 1];
+
             }
+
             if (text[i] == pattern[j]) {
                 j++;
             }
@@ -108,6 +115,7 @@ class Solution {
                 return true;
             }
         }
+
         return false;
     }
 }
