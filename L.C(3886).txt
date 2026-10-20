@@ -1,3 +1,4 @@
+
 Question 3886:-
 
 You are given an integer array nums of length n.
@@ -27,7 +28,7 @@ Only k = 3 is sortable. Hence, the answer is 3.
 
 
 
-SOLUTION:
+SOLUTION:-
 
 
 class Solution {
@@ -111,6 +112,7 @@ class Solution {
             if (text[i] == pattern[j]) {
                 j++;
             }
+
             if (j == m) {
                 return true;
             }
