@@ -52,6 +52,7 @@ Solution:-
             if (value != i) {
                 asc = false;
             }
+
             if (value != n - i) {
                 desc = false;
             }
