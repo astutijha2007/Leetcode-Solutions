@@ -1,4 +1,4 @@
-Question:- 3942
+ Question:- 3942
 
 You are given an integer array nums of length n, where nums is a permutation of the integers from 0 to n - 1.
 
