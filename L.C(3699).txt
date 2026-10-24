@@ -1,3 +1,4 @@
+
 QUESTION:- 3699;
 
 You are given three integers n, l, and r.
