@@ -1,7 +1,5 @@
 Question:- 3841;
 
-
-
 You are given an undirected tree with n nodes labeled 0 to n - 1. This is represented by a 2D array edges of length n - 1, where edges[i] = [ui, vi] indicates an undirected edge between nodes ui and vi.
 
 You are also given a string s of length n consisting of lowercase English letters, where s[i] represents the character assigned to node i.
@@ -20,7 +18,7 @@ Input: n = 3, edges = [[0,1],[1,2]], s = "aac", queries = ["query 0 2","update 1
 
 Output: [true,false]
 
-Explanation:
+Explanation:-
 
 "query 0 2": Path 0 → 1 → 2 gives "aac", which can be rearranged to form "aca", a palindrome. Thus, answer[0] = true.
 "update 1 b": Update node 1 to 'b', now s = "abc".
