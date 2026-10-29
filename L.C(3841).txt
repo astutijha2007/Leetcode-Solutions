@@ -32,8 +32,6 @@ Thus, answer = [true, false].
 Solution:-
 
 
-
-
   class BIT {
 
     private int[] tree;
