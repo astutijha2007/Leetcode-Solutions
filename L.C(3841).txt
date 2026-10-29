@@ -173,6 +173,7 @@ class Solution {
                 v = fa[v][i];
             }
         }
+
         return fa[u][0];
     }
 }
