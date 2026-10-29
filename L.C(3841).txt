@@ -84,6 +84,7 @@ class Solution {
         String s,
         String[] queries
     ) {
+
         g = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             g.add(new ArrayList<>());
