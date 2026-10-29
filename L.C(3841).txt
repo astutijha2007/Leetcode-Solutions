@@ -12,7 +12,7 @@ Return a boolean array answer, where answer[j] is true if the jth query of type 
 
  
 
-Example 1:
+Example 1:-
 
 Input: n = 3, edges = [[0,1],[1,2]], s = "aac", queries = ["query 0 2","update 1 b","query 0 2"]
 
