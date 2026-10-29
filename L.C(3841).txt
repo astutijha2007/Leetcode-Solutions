@@ -78,7 +78,7 @@ class Solution {
     private int LOG;
 
     public List<Boolean> palindromePath(
-        int n,
+        int n, 
         int[][] edges,
         String s,
         String[] queries
