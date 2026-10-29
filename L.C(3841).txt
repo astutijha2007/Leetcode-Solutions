@@ -57,6 +57,7 @@ Solution:-
             ret ^= tree[x];
             x -= lowbit(x);
         }
+
         return ret;
     }
 
