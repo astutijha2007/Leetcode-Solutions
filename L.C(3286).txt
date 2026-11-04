@@ -1,5 +1,3 @@
-
-
 QUESTION:- 3286;
 
 you are given an m x n binary matrix grid and an integer health.
