@@ -10,7 +10,6 @@ A connected component is a subgraph of a graph in which there exists a path betw
 A connected component is said to be complete if there exists an edge between every pair of its vertices.
 
 
-
  
 SOLUTION:-
 
